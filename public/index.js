@@ -1,6 +1,7 @@
 var clock;
 const intro = document.querySelector('.intro')
 const skills = document.querySelector('.core-skills')
+const projects = document.querySelector('.projects')
 const contactForm = document.querySelector('.contact')
 const name = document.querySelector('#name-box')
 const gmail = document.querySelector('#email-box')
@@ -20,6 +21,12 @@ const toForm = () => contactForm.scrollIntoView({
 })
 
 const toSkill = () => skills.scrollIntoView({
+    behavior: 'smooth',
+    block: "end",
+    inline: "end"
+})
+
+const toProject = () => projects.scrollIntoView({
     behavior: 'smooth',
     block: "end",
     inline: "end"
